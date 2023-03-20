@@ -1,0 +1,53 @@
+2023-03-19 15:08:44.212 [info] Extension host with pid 808430 started
+2023-03-19 15:08:44.276 [error] Error: EEXIST: file already exists, open '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902/vscode.lock'
+2023-03-19 15:08:44.320 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-03-19 15:08:44.335 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902/vscode.lock': The lock does not look stale, elapsed: 721 ms, giving up.
+2023-03-19 15:08:44.380 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902-1/vscode.lock': Lock acquired.
+2023-03-19 15:08:44.459 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-19 15:08:44.476 [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+2023-03-19 15:08:44.477 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-19 15:08:45.269 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-19 15:08:45.271 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-19 15:08:46.173 [info] Eager extensions activated
+2023-03-19 15:08:46.174 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 15:08:46.175 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 15:12:11.889 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2023-03-19 15:12:23.696 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2023-03-19 15:28:28.103 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2023-03-19 15:41:38.235 [info] ExtensionService#_doActivateExtension ms-vscode.live-server, startup: false, activationEvent: 'onCommand:livePreview.start.preview.atFile'
+2023-03-19 18:50:21.836 [info] Extension host terminating: renderer disconnected for too long (1)
+2023-03-19 18:50:21.838 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2023-03-19 18:50:21.874 [error] Canceled: Canceled
+	at new l (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:88793)
+	at a.O (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:106:11260)
+	at Proxy.V.<computed>.Q.charCodeAt.V.<computed> (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:106:8550)
+	at c.g (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:108198)
+	at c.executeCommand (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:107574)
+	at N.registerCommand.description (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:106867)
+	at c.h (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:108784)
+	at c.g (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:107674)
+	at c.executeCommand (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:96:107574)
+	at Object.executeCommand (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:117:30781)
+	at /web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:72437
+	at f.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:63:145)
+	at m.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:63:2066)
+	at d.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:63:1704)
+	at h.closeServer (/web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:80818)
+	at h.dispose (/web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:83354)
+	at /web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:68637
+	at Map.forEach (<anonymous>)
+	at E.closeAllServers (/web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:68622)
+	at E.dispose (/web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:68665)
+	at Object.e.deactivate (/web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7/out/extension.js:1:490369)
+	at f.X (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:108:11085)
+	at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:108:9088
+	at Array.map (<anonymous>)
+	at f.Q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:108:9075)
+	at f.terminate (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:108:9347)
+	at u.terminate (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:112:1397)
+	at p (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:122:18592)
+	at Q.a (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:122:15060)
+	at Q.h (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:66:46717)
+	at listOnTimeout (node:internal/timers:559:17)
+	at processTimers (node:internal/timers:502:7) setContext undefined
+2023-03-19 18:50:21.907 [info] Extension host with pid 808430 exiting with code 0

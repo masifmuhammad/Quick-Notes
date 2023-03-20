@@ -1,0 +1,148 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to 127.0.0.1:36083 (IPv4)
+Extension host agent listening on 36083
+
+[07:19:46] 
+
+
+
+
+[07:19:46] Extension host agent started.
+[07:19:47] [127.0.0.1][4f5fd708][ManagementConnection] New connection established.
+[07:19:47] [127.0.0.1][486f2ca3][ExtensionHostConnection] New connection established.
+[07:19:47] [127.0.0.1][486f2ca3][ExtensionHostConnection] <822828> Launched Extension Host Process.
+[07:19:47] Getting Manifest... blackboxapp.blackbox
+[07:19:47] Getting Manifest... blackboxapp.blackbox
+[07:19:47] Installing extension: blackboxapp.blackbox
+[07:19:47] Extensions is already requested to install blackboxapp.blackbox
+[07:19:50] Extension signature verification: blackboxapp.blackbox. Verification status: Verified.
+[IPC Library: Pty Host]  WARN Shell integration cannot be enabled for executable "/bin/sh" and args [
+  '-c',
+  'wget --version > /dev/null\n' +
+    'if [ $? -eq 0 ]\n' +
+    'then\n' +
+    "\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q --header='Metadata:true' -O - http://169.254.169.254/metadata/instance?api-version=2019-03-11\n" +
+    'else\n' +
+    '\tcurl --version > /dev/null\n' +
+    '\tif [ $? -eq 0 ]\n' +
+    '\tthen\n' +
+    "\t\tcurl --connect-timeout 7 -s --header='Metadata:true' http://169.254.169.254/metadata/instance?api-version=2019-03-11\n" +
+    '\tfi\n' +
+    'fi\n' +
+    'exit 0'
+]
+[IPC Library: Pty Host]  WARN Shell integration cannot be enabled for executable "/bin/sh" and args [
+  '-c',
+  'wget --version > /dev/null\n' +
+    'if [ $? -eq 0 ]\n' +
+    'then\n' +
+    '\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q  -O - http://169.254.169.254/latest/meta-data/instance-id\n' +
+    'else\n' +
+    '\tcurl --version > /dev/null\n' +
+    '\tif [ $? -eq 0 ]\n' +
+    '\tthen\n' +
+    '\t\tcurl --connect-timeout 7 -s  http://169.254.169.254/latest/meta-data/instance-id\n' +
+    '\tfi\n' +
+    'fi\n' +
+    'exit 0'
+]
+[IPC Library: Pty Host]  WARN Shell integration cannot be enabled for executable "/bin/sh" and args [
+  '-c',
+  'wget --version > /dev/null\n' +
+    'if [ $? -eq 0 ]\n' +
+    'then\n' +
+    '\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q  -O - http://169.254.169.254/metadata/v1/id\n' +
+    'else\n' +
+    '\tcurl --version > /dev/null\n' +
+    '\tif [ $? -eq 0 ]\n' +
+    '\tthen\n' +
+    '\t\tcurl --connect-timeout 7 -s  http://169.254.169.254/metadata/v1/id\n' +
+    '\tfi\n' +
+    'fi\n' +
+    'exit 0'
+]
+[IPC Library: Pty Host]  WARN Shell integration cannot be enabled for executable "/bin/sh" and args [
+  '-c',
+  'wget --version > /dev/null\n' +
+    'if [ $? -eq 0 ]\n' +
+    'then\n' +
+    "\twget --connect-timeout=7 --tries=1 --dns-timeout=7 -q --header='Metadata-Flavor:Google' -O - http://metadata.google.internal/computeMetadata/v1/instance/id\n" +
+    'else\n' +
+    '\tcurl --version > /dev/null\n' +
+    '\tif [ $? -eq 0 ]\n' +
+    '\tthen\n' +
+    "\t\tcurl --connect-timeout 7 -s --header='Metadata-Flavor:Google' http://metadata.google.internal/computeMetadata/v1/instance/id\n" +
+    '\tfi\n' +
+    'fi\n' +
+    'exit 0'
+]
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty on pty host
+stack trace: CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateTitle (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:2630)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+[07:19:53] Error [CodeExpectedError]: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateTitle (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:2630)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty on pty host
+stack trace: CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateIcon (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:2680)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+[07:19:53] Error [CodeExpectedError]: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateIcon (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:27:2680)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+[07:19:56] Extracted extension to /web/users/projects/202223/quicknotes/.vscode-server/extensions/.5bd89b92-d375-4913-b6b4-e28cf409fd46: blackboxapp.blackbox
+[07:19:56] Renamed to /web/users/projects/202223/quicknotes/.vscode-server/extensions/blackboxapp.blackbox-0.10.44
+[07:19:56] Extracting extension completed. blackboxapp.blackbox
+[07:19:56] Extension installed successfully: blackboxapp.blackbox
+New EH opened, aborting shutdown
+[07:24:46] New EH opened, aborting shutdown

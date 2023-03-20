@@ -1,0 +1,17 @@
+2023-03-19 11:57:36.350 [info] Extension host with pid 800971 started
+2023-03-19 11:57:36.362 [error] Error: EEXIST: file already exists, open '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902/vscode.lock'
+2023-03-19 11:57:36.366 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-03-19 11:57:36.371 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902/vscode.lock': The lock does not look stale, elapsed: 367 ms, giving up.
+2023-03-19 11:57:36.375 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902-1/vscode.lock': Lock acquired.
+2023-03-19 11:57:36.734 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-19 11:57:36.735 [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+2023-03-19 11:57:36.736 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-19 11:57:37.395 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-19 11:57:37.396 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-19 11:57:37.806 [info] Eager extensions activated
+2023-03-19 11:57:37.807 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 11:57:37.808 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-19 12:01:35.997 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2023-03-19 12:02:33.991 [info] Extension host terminating: received terminate message from renderer
+2023-03-19 12:02:33.993 [info] Lock '/web/users/projects/202223/quicknotes/.vscode-server/data/User/workspaceStorage/3766c4dc35d12b40439d04be46705902-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2023-03-19 12:02:34.024 [info] Extension host with pid 800971 exiting with code 0

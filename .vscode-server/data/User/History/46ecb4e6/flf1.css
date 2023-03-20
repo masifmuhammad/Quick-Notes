@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #242526;
+  transition: all 0.5s ease;
+}
+
+.link-items {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.link-item {
+  position: relative;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.link-item:not(.top):hover {
+  background-color: #3a3b3c;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+}
+
+.link-item:not(.top):hover .link {
+  color: #fff;
+}
+
+.link-item.top {
+  padding: 40px 20px;
+}
+
+.link-item img {
+  width: 70px;
+}
+
+.link-item .text {
+  position: absolute;
+  left: 72px;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.link-item:hover .text {
+  left: 100px;
+  opacity: 1;
+}
+
+.link-item.active {
+  background-color: #3a3b3c;
+}
+
+.link-item.active .link {
+  color: #fff;
+}
+
+.dark-mode {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #1e1e1e;
+}
+
+body.dark #sidebar {
+  background-color: #1c1c1c;
+}
