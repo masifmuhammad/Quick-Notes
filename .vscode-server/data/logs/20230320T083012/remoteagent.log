@@ -1,0 +1,10 @@
+2023-03-20 08:30:12.213 [info] 
+
+
+
+
+2023-03-20 08:30:12.239 [info] Extension host agent started.
+2023-03-20 08:30:12.576 [info] [127.0.0.1][b172b13d][ManagementConnection] New connection established.
+2023-03-20 08:30:12.615 [info] [127.0.0.1][236e32b3][ExtensionHostConnection] New connection established.
+2023-03-20 08:30:12.622 [info] [127.0.0.1][236e32b3][ExtensionHostConnection] <831994> Launched Extension Host Process.
+2023-03-20 08:35:12.240 [info] New EH opened, aborting shutdown

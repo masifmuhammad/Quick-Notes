@@ -1,0 +1,14 @@
+{
+    "files.autoSave": "afterDelay",
+    "remote.SSH.remotePlatform": {
+        "selene.hud.ac.uk": "linux"
+    },
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDragAndDrop": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "cmake.configureOnOpen": true,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true
+}
