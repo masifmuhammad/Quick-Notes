@@ -18,3 +18,4 @@
 	at Array.map (<anonymous>)
 	at ge.provideInlineCompletions (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/workbench/api/node/extensionHostProcess.js:98:48165)
 	at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-03-20 08:41:55.563 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
