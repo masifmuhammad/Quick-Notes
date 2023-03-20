@@ -67,3 +67,18 @@
 2023-03-20 07:28:08.648 [warning] [Decorations] CAPPING events from decorations provider vscode.git 7844
 2023-03-20 07:28:21.008 [warning] [Decorations] CAPPING events from decorations provider vscode.git 7844
 2023-03-20 07:28:26.204 [warning] [Decorations] CAPPING events from decorations provider vscode.git 7844
+2023-03-20 07:28:31.332 [warning] [Decorations] CAPPING events from decorations provider vscode.git 7844
+2023-03-20 07:38:17.664 [error] [Blackboxapp.blackbox] provider FAILED
+2023-03-20 07:38:17.665 [error] TypeError: Cannot read properties of undefined (reading 'command')
+	at /web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/workbench/api/node/extensionHostProcess.js:98:48189
+	at Array.map (<anonymous>)
+	at ge.provideInlineCompletions (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/workbench/api/node/extensionHostProcess.js:98:48165)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2023-03-20 07:38:43.207 [error] [Blackboxapp.blackbox] provider FAILED
+2023-03-20 07:38:43.208 [error] TypeError: Cannot read properties of undefined (reading 'command')
+	at /web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/workbench/api/node/extensionHostProcess.js:98:48189
+	at Array.map (<anonymous>)
+	at ge.provideInlineCompletions (/web/users/projects/202223/quicknotes/.vscode-server/bin/5e805b79fcb6ba4c2d23712967df89a089da575b/out/vs/workbench/api/node/extensionHostProcess.js:98:48165)
+	at runMicrotasks (<anonymous>)
+	at processTicksAndRejections (node:internal/process/task_queues:96:5)
