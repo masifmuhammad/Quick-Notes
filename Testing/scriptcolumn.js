@@ -26,16 +26,16 @@ for (let i = 0; i < linkItems.length; i++) {
 }
 
 // Dark Mode Functionality
+// Dark Mode Functionality
 darkMode.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  
   if (document.body.classList.contains("dark-mode")) {
-    darkMode.querySelector("span").textContent = "dark mode";
-    darkMode.querySelector("ion-icon").setAttribute("name", "moon-outline");
-
-    // logo.style.fill = "#363b46";
-  } else {
     darkMode.querySelector("span").textContent = "light mode";
     darkMode.querySelector("ion-icon").setAttribute("name", "sunny-outline");
-    // logo.style.fill = "#eee";
+  } else {
+    darkMode.querySelector("span").textContent = "dark mode";
+    darkMode.querySelector("ion-icon").setAttribute("name", "moon-outline");
   }
-  document.body.classList.toggle("dark-mode");
 });
+

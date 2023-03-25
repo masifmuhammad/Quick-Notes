@@ -497,7 +497,7 @@ window.onload = function() {
             <a href="TeamPage.php" style="--i: 0.25s">  Team </a>
           </li>
           <li>
-            <a href="contactpage2.php" style="--i: 0.3s"> Contact</a>
+            <a href="contactpage.php" style="--i: 0.3s"> Contact</a>
           </li>
         </ul>
       </div>

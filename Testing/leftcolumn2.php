@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylecolumn.css" />
+    <link rel="stylesheet" href="stylecolumn.css" href="style2.css" />
     <title>Responsive Sidebar</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -23,13 +23,13 @@
             </span>
           </a>
         </li>
-        <li class="link-item active">
+        <li class="link-item ">
         <a href="main.php" class="link">
             <ion-icon name="home-outline"></ion-icon>
             <span style="--i: 1">Notes</span>
           </a>
         </li>
-        <li class="link-item">
+        <li class="link-item active">
     <a href="search.php" class="link">
         <ion-icon name="search-outline"></ion-icon>
         <span style="--i: 4">Search</span>
@@ -54,7 +54,7 @@
           </a>
         </li>
 
-        <li class="link-item dark-mode">
+        <li class="link-item dark-mode ">
           <a href="#" class="link">
             <ion-icon name="moon-outline"></ion-icon>
             <span style="--i: 8">dark mode</span>

@@ -13,10 +13,11 @@
             $stmt->bind_param("ss", $title, $note);
 
             if ($stmt->execute() === TRUE) {
-                echo "New record created successfully";
-            } else {
-                echo "Error: " . $stmt->error;
-            }
+              $_SESSION['note_saved'] = true;
+          } else {
+              echo "Error: " . $stmt->error;
+          }
+          
 
             $stmt->close();
         } elseif (isset($_POST["submit_search"])) {
@@ -58,7 +59,9 @@
     <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 
 </head>
-<body>    <div class="container">
+<body>  
+<div class="notification" id="notification">Note saved successfully!</div>
+    <div class="container">
       <ul class="link-items">
         <li class="link-item top">
           <a href="#" class="link">
@@ -150,7 +153,24 @@
             </ul>
         <?php endif; ?>
     </div>
+    <script>
+    function showNotification() {
+        const notification = document.getElementById('notification');
+        notification.classList.add('show');
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 4000);
+    }
+</script>
 
-    <script src="javascript2.js"></script>
+<script src="javascript2.js"></script>
+<?php if (isset($_SESSION['note_saved']) && $_SESSION['note_saved']): ?>
+<script>
+    showNotification();
+</script>
+<?php unset($_SESSION['note_saved']); ?>
+<?php endif; ?>
+
+
 </body>
 </html>
