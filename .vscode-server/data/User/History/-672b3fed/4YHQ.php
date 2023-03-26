@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?phpsession_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['note_id'])) {
     include("connection.php");

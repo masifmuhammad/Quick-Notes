@@ -68,10 +68,11 @@ session_start();
                     $note_text = $note['note'];
                 ?>
                   <p><?= $note_text; ?></p>
-                  <button class="edit-btn" data-id="<?= $note['note_id']; ?>">Edit</button>
-        <button class="delete-btn" data-id="<?= $note['note_id']; ?>">Delete</button>
-        <button class="save-btn" data-id="<?= $note['note_id']; ?>">Save</button>
-        <button class="share-btn" data-id="<?= $note['note_id']; ?>">Share</button>
+    <button class="edit-btn" data-id="<?= $note['id']; ?>">Edit</button>
+    <button class="delete-btn" data-id="<?= intval($note['id']); ?>">Delete</button>
+
+    <button class="save-btn" data-id="<?= $note['id']; ?>">Save</button>
+    <button class="share-btn" data-id="<?= $note['id']; ?>">Share</button>
             </li>
         <?php endforeach; ?>
     </ul>

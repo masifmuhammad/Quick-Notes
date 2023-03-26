@@ -25,11 +25,7 @@ document.querySelectorAll('.edit-btn').forEach(button => {
 
 document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', (e) => {
-        const noteId = parseInt(e.target.dataset.id);
-        if (isNaN(noteId)) {
-            console.error('Invalid note ID');
-            return;
-        }
+        const noteId = e.target.dataset.id;
         fetch('delete_note.php', {
             method: 'POST',
             headers: {
@@ -44,28 +40,18 @@ document.querySelectorAll('.delete-btn').forEach(button => {
             return response.text();
         })
         .then((result) => {
-            if (result.trim() === 'Note deleted successfully') {
-                const liElement = e.target.parentElement;
-                if (liElement.parentElement !== null) {
-                    liElement.remove();
-                }
+            if (result === 'Note deleted successfully') {
+                e.target.parentElement.remove();
                 console.log(result);
-                alert(result);
             } else {
                 console.error(result);
-                alert(result);
             }
         })
         .catch((error) => {
             console.error('Error deleting the note:', error);
-            alert('Error deleting the note:', error);
         });
     });
 });
-
-
-
-
 
 
 document.querySelectorAll('.save-btn').forEach(button => {

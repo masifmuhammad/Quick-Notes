@@ -25,11 +25,7 @@ document.querySelectorAll('.edit-btn').forEach(button => {
 
 document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', (e) => {
-        const noteId = parseInt(e.target.dataset.id);
-        if (isNaN(noteId)) {
-            console.error('Invalid note ID');
-            return;
-        }
+        const noteId = e.target.dataset.id;
         fetch('delete_note.php', {
             method: 'POST',
             headers: {
@@ -45,10 +41,7 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         })
         .then((result) => {
             if (result.trim() === 'Note deleted successfully') {
-                const liElement = e.target.parentElement;
-                if (liElement.parentElement !== null) {
-                    liElement.remove();
-                }
+                e.target.parentElement.remove();
                 console.log(result);
                 alert(result);
             } else {
@@ -58,12 +51,10 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         })
         .catch((error) => {
             console.error('Error deleting the note:', error);
-            alert('Error deleting the note:', error);
+            alert('Error deleting the note: ' + error.message);
         });
     });
 });
-
-
 
 
 

@@ -45,10 +45,7 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         })
         .then((result) => {
             if (result.trim() === 'Note deleted successfully') {
-                const liElement = e.target.parentElement;
-                if (liElement.parentElement !== null) {
-                    liElement.remove();
-                }
+                e.target.parentElement.remove();
                 console.log(result);
                 alert(result);
             } else {
@@ -62,7 +59,6 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         });
     });
 });
-
 
 
 

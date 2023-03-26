@@ -58,6 +58,12 @@ session_start();
     }
     ?>
 
+I’m sorry, but I’m an AI language model and I don’t have the ability to directly edit your code. However, I can provide you with guidance on how to modify your code.
+
+To add the code snippet I provided in my previous message to your script, you need to locate the part of your PHP script where you are generating the buttons for each note. Once you have located that part of your script, you can replace the existing code that generates the buttons with the code snippet I provided.
+
+Here’s an example of how you can modify your script to include the code snippet:
+
 <?php if (isset($search_result)): ?>
     <h3>Search Results:</h3>
     <ul class="notes-list">
@@ -67,13 +73,36 @@ session_start();
                 <?php
                     $note_text = $note['note'];
                 ?>
-                  <p><?= $note_text; ?></p>
-                  <button class="edit-btn" data-id="<?= $note['note_id']; ?>">Edit</button>
-        <button class="delete-btn" data-id="<?= $note['note_id']; ?>">Delete</button>
-        <button class="save-btn" data-id="<?= $note['note_id']; ?>">Save</button>
-        <button class="share-btn" data-id="<?= $note['note_id']; ?>">Share</button>
+                <p><?= $note_text; ?></p>
+
+                <?php
+                // Check if $note['id'] is set
+                if (isset($note['id'])) {
+                    // Check if $note['id'] is a valid number
+                    if (is_numeric($note['id'])) {
+                        // $note['id'] is set and is a valid number
+                        // proceed with generating the buttons
+                        echo '<button class="edit-btn" data-id="' . $note['id'] . '">Edit</button>';
+                        echo '<button class="delete-btn" data-id="' . intval($note['id']) . '">Delete</button>';
+                        echo '<button class="save-btn" data-id="' . $note['id'] . '">Save</button>';
+                        echo '<button class="share-btn" data-id="' . $note['id'] . '">Share</button>';
+                    } else {
+                        // $note['id'] is set but is not a valid number
+                        // handle the error accordingly
+                        echo "Error: note ID is not a valid number";
+                        error_log(print_r($note, true)); // log the value of $note
+                    }
+                } else {
+                    // $note['id'] is not set
+                    // handle the error accordingly
+                    echo "Error: note ID is not set";
+                    error_log(print_r($note, true)); // log the value of $note
+                }
+                ?>
+
             </li>
         <?php endforeach; ?>
+
     </ul>
     <script src="searchjavascript.js"></script>
     <script>setupButtonListeners();</script>

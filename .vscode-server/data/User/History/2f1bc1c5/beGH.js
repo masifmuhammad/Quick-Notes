@@ -25,7 +25,7 @@ document.querySelectorAll('.edit-btn').forEach(button => {
 
 document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', (e) => {
-        const noteId = parseInt(e.target.dataset.id);
+        const noteId = parseInt(e.currentTarget.dataset.id);
         if (isNaN(noteId)) {
             console.error('Invalid note ID');
             return;
@@ -37,6 +37,18 @@ document.querySelectorAll('.delete-btn').forEach(button => {
             },
             body: `note_id=${noteId}`,
         })
+        if (result.trim() === 'Note deleted successfully') {
+            const liElement = e.target.parentElement;
+            if (liElement.parentElement !== null) {
+                liElement.remove();
+            }
+            console.log(result);
+            alert(result);
+        } else {
+            console.error(result);
+            alert(result);
+        }
+        
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`HTTP error ${response.status}`);
@@ -45,9 +57,9 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         })
         .then((result) => {
             if (result.trim() === 'Note deleted successfully') {
-                const liElement = e.target.parentElement;
-                if (liElement.parentElement !== null) {
-                    liElement.remove();
+                const parentElement = e.target.parentElement;
+                if (parentElement) {
+                    parentElement.remove();
                 }
                 console.log(result);
                 alert(result);
@@ -62,7 +74,6 @@ document.querySelectorAll('.delete-btn').forEach(button => {
         });
     });
 });
-
 
 
 
