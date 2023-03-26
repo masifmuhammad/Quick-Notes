@@ -75,12 +75,11 @@ session_start();
             </li>
         <?php endforeach; ?>
     </ul>
-    <script src="searchjavascript.js"></script>
     <script>setupButtonListeners();</script>
 <?php endif; ?>
 </div>
     </div>
 
-    
+    <script src="searchjavascript.js"></script>
 </body>
 </html>

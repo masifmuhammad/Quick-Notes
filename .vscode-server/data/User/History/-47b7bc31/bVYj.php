@@ -24,7 +24,11 @@ session_start();
     <?php
         $note_text = $note['note'];
     ?>
-  
+    <p><?= $note_text; ?></p>
+    <button class="edit-btn" data-id="<?= $note['id']; ?>">Edit</button>
+    <button class="delete-btn" data-id="<?= $note['id']; ?>">Delete</button>
+    <button class="save-btn" data-id="<?= $note['id']; ?>">Save</button>
+    <button class="share-btn" data-id="<?= $note['id']; ?>">Share</button>
 </li>
 
 <!-- Search Content -->
@@ -67,20 +71,15 @@ session_start();
                 <?php
                     $note_text = $note['note'];
                 ?>
-                  <p><?= $note_text; ?></p>
-    <button class="edit-btn" data-id="<?= $note['id']; ?>">Edit</button>
-    <button class="delete-btn" data-id="<?= $note['id']; ?>">Delete</button>
-    <button class="save-btn" data-id="<?= $note['id']; ?>">Save</button>
-    <button class="share-btn" data-id="<?= $note['id']; ?>">Share</button>
+                <p><?= $note_text; ?></p>
             </li>
         <?php endforeach; ?>
     </ul>
-    <script src="searchjavascript.js"></script>
     <script>setupButtonListeners();</script>
 <?php endif; ?>
 </div>
     </div>
 
-    
+    <script src="searchjavascript.js"></script>
 </body>
 </html>
