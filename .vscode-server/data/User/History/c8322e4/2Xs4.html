@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FirebaseUI Web</title>
+    <!-- Firebase JavaScript SDK -->
+   <!-- Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js" nomodule></script>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js" nomodule></script>
+<script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js" nomodule></script>
+
+<!-- FirebaseUI JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js" nomodule></script>
+
+    
+    <!-- FirebaseUI stylesheet -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+</head>
+<body>
+    <!-- FirebaseUI container -->
+    <div id="firebaseui-auth-container"></div>
+    <!-- Firebase JavaScript SDK -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+        import { getAuth, EmailAuthProvider, GoogleAuthProvider, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+        import { getUi } from "https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js";
+        
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+  apiKey: "AIzaSyCzFLZEFh0gQv8OAHgewx_QgmGNOZbKm4o",
+  authDomain: "quick-notes-69bbd.firebaseapp.com",
+  projectId: "quick-notes-69bbd",
+  storageBucket: "quick-notes-69bbd.appspot.com",
+  messagingSenderId: "263436417083",
+  appId: "1:263436417083:web:d6cc88aa0e21c26cf1441e",
+  measurementId: "G-Z5NSF85Q73"
+};
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+        
+        // FirebaseUI config
+        const uiConfig = {
+            signInOptions: [
+                EmailAuthProvider.PROVIDER_ID,
+                GoogleAuthProvider.PROVIDER_ID,
+                FacebookAuthProvider.PROVIDER_ID,
+                // Add additional authentication options as needed
+            ],
+            // Other config options as needed
+        };
+        
+        // Initialize FirebaseUI
+        const ui = getUi(auth);
+        ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+</body>
+</html>

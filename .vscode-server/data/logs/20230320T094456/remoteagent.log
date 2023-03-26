@@ -1,0 +1,84 @@
+2023-03-20 09:44:56.897 [info] 
+
+
+
+
+2023-03-20 09:44:56.924 [info] Extension host agent started.
+2023-03-20 09:44:57.126 [info] [127.0.0.1][a408da95][ManagementConnection] New connection established.
+2023-03-20 09:44:57.152 [info] [127.0.0.1][6999143a][ExtensionHostConnection] New connection established.
+2023-03-20 09:44:57.161 [info] [127.0.0.1][6999143a][ExtensionHostConnection] <839147> Launched Extension Host Process.
+2023-03-20 09:45:01.836 [info] [127.0.0.1][a408da95][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-20 09:45:01.859 [info] [127.0.0.1][6999143a][ExtensionHostConnection] <839147> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 09:45:01.860 [info] Cancelling previous shutdown timeout
+2023-03-20 09:45:01.860 [info] Last EH closed, waiting before shutting down
+2023-03-20 09:45:10.474 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-20 09:45:10.474 [info] Cancelling previous shutdown timeout
+2023-03-20 09:45:10.637 [info] [127.0.0.1][344c6de4][ManagementConnection] New connection established.
+2023-03-20 09:45:10.652 [info] [127.0.0.1][cf441112][ExtensionHostConnection] New connection established.
+2023-03-20 09:45:10.661 [info] [127.0.0.1][cf441112][ExtensionHostConnection] <839331> Launched Extension Host Process.
+2023-03-20 09:46:21.931 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-20 09:46:21.931 [info] Cancelling previous shutdown timeout
+2023-03-20 09:46:22.275 [info] [127.0.0.1][2b6a687e][ManagementConnection] New connection established.
+2023-03-20 09:46:22.277 [info] [127.0.0.1][13db04fb][ExtensionHostConnection] New connection established.
+2023-03-20 09:46:22.284 [info] [127.0.0.1][13db04fb][ExtensionHostConnection] <839815> Launched Extension Host Process.
+2023-03-20 09:46:24.310 [warning] RequestStore#acceptReply was called without receiving a matching request 25
+2023-03-20 09:46:24.323 [warning] RequestStore#acceptReply was called without receiving a matching request 26
+2023-03-20 09:46:25.263 [warning] RequestStore#acceptReply was called without receiving a matching request 27
+2023-03-20 09:46:25.282 [warning] RequestStore#acceptReply was called without receiving a matching request 28
+2023-03-20 09:46:25.302 [warning] RequestStore#acceptReply was called without receiving a matching request 29
+2023-03-20 09:46:25.303 [warning] RequestStore#acceptReply was called without receiving a matching request 30
+2023-03-20 09:46:25.402 [warning] RequestStore#acceptReply was called without receiving a matching request 31
+2023-03-20 09:46:25.433 [warning] RequestStore#acceptReply was called without receiving a matching request 32
+2023-03-20 09:46:25.443 [warning] RequestStore#acceptReply was called without receiving a matching request 33
+2023-03-20 09:46:25.452 [warning] RequestStore#acceptReply was called without receiving a matching request 34
+2023-03-20 09:46:25.497 [warning] RequestStore#acceptReply was called without receiving a matching request 35
+2023-03-20 09:46:25.497 [warning] RequestStore#acceptReply was called without receiving a matching request 36
+2023-03-20 09:51:21.933 [info] New EH opened, aborting shutdown
+2023-03-20 11:04:59.985 [info] [127.0.0.1][cf441112][ExtensionHostConnection] The client has reconnected.
+2023-03-20 11:10:00.125 [info] [127.0.0.1][13db04fb][ExtensionHostConnection] <839815> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 12:30:44.574 [info] [127.0.0.1][7fe19b85][ManagementConnection] New connection established.
+2023-03-20 12:30:44.591 [info] [127.0.0.1][60074134][ExtensionHostConnection] New connection established.
+2023-03-20 12:30:44.694 [info] [127.0.0.1][60074134][ExtensionHostConnection] <856294> Launched Extension Host Process.
+2023-03-20 12:35:44.740 [info] [127.0.0.1][cf441112][ExtensionHostConnection] <839331> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 13:01:04.770 [info] Getting Manifest... timkmecl.codegpt3
+2023-03-20 13:01:04.843 [info] Installing extension: timkmecl.codegpt3
+2023-03-20 13:01:06.431 [info] Extension signature verification: timkmecl.codegpt3. Verification status: Verified.
+2023-03-20 13:01:06.623 [info] Extracted extension to /web/users/projects/202223/quicknotes/.vscode-server/extensions/.23ac72a2-e1ab-4846-9858-fc3362d6063e: timkmecl.codegpt3
+2023-03-20 13:01:06.630 [info] Renamed to /web/users/projects/202223/quicknotes/.vscode-server/extensions/timkmecl.codegpt3-1.1.2
+2023-03-20 13:01:06.632 [info] Extracting extension completed. timkmecl.codegpt3
+2023-03-20 13:01:06.638 [info] Extension installed successfully: timkmecl.codegpt3
+2023-03-20 13:01:27.796 [info] Getting Manifest... github.copilot
+2023-03-20 13:01:27.864 [info] Installing extension: github.copilot
+2023-03-20 13:01:29.311 [info] Extension signature verification: github.copilot. Verification status: Verified.
+2023-03-20 13:01:31.219 [info] Extracted extension to /web/users/projects/202223/quicknotes/.vscode-server/extensions/.86174712-5ccb-4018-9352-953afd64b73e: github.copilot
+2023-03-20 13:01:31.226 [info] Renamed to /web/users/projects/202223/quicknotes/.vscode-server/extensions/github.copilot-1.78.9758
+2023-03-20 13:01:31.232 [info] Extracting extension completed. github.copilot
+2023-03-20 13:01:31.287 [info] Extension installed successfully: github.copilot
+2023-03-20 13:06:28.342 [info] [127.0.0.1][60074134][ExtensionHostConnection] The client has reconnected.
+2023-03-20 15:24:25.606 [info] [127.0.0.1][47dbf75c][ManagementConnection] New connection established.
+2023-03-20 15:24:25.648 [info] [127.0.0.1][09881e99][ExtensionHostConnection] New connection established.
+2023-03-20 15:24:25.715 [info] [127.0.0.1][09881e99][ExtensionHostConnection] <866628> Launched Extension Host Process.
+2023-03-20 15:24:34.124 [info] [127.0.0.1][47dbf75c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-20 15:24:34.217 [info] [127.0.0.1][09881e99][ExtensionHostConnection] <866628> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 15:24:52.526 [info] [127.0.0.1][392fd2b4][ManagementConnection] New connection established.
+2023-03-20 15:24:52.865 [info] [127.0.0.1][cc5ad7ca][ExtensionHostConnection] New connection established.
+2023-03-20 15:24:52.978 [info] [127.0.0.1][cc5ad7ca][ExtensionHostConnection] <866813> Launched Extension Host Process.
+2023-03-20 15:24:55.606 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateTitle (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:2630)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-20 15:29:27.697 [info] [127.0.0.1][60074134][ExtensionHostConnection] <856294> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 15:30:02.231 [info] [127.0.0.1][392fd2b4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-20 15:30:02.341 [info] [127.0.0.1][cc5ad7ca][ExtensionHostConnection] <866813> Extension Host Process exited with code: 0, signal: null.
+2023-03-20 15:30:02.341 [info] Last EH closed, waiting before shutting down
+2023-03-20 15:35:02.342 [info] Last EH closed, shutting down

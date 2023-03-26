@@ -1,0 +1,10 @@
+[Trace 10:27:13.385] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///web/users/projects/202223/quicknotes/README.md
+[Trace 10:27:13.386] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///web/users/projects/202223/quicknotes/README.md
+[Trace 10:27:13.388] Server: connection.languages.diagnostics.on: file:///web/users/projects/202223/quicknotes/README.md
+[Trace 10:27:13.402] Server: connection.languages.diagnostics.on: file:///web/users/projects/202223/quicknotes/README.md
+[Trace 10:27:13.492] DocumentSymbolProvider: provideDocumentSymbols — file:///web/users/projects/202223/quicknotes/README.md 1
+[Debug 10:27:13.493] LinkProvider: compute - file:///web/users/projects/202223/quicknotes/README.md
+[Debug 10:27:13.707] MdFoldingProvider: provideFoldingRanges — file:///web/users/projects/202223/quicknotes/README.md 1
+[Debug 10:27:13.707] TableOfContentsProvider: create - file:///web/users/projects/202223/quicknotes/README.md
+[Trace 10:27:20.699] VsCodeClientWorkspace: TextDocument.onDidClose: file:///web/users/projects/202223/quicknotes/README.md
+[Trace 10:27:20.700] VsCodeClientWorkspace: deleteDocument: file:///web/users/projects/202223/quicknotes/README.md

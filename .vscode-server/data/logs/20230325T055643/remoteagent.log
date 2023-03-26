@@ -1,0 +1,82 @@
+2023-03-25 05:56:43.356 [info] 
+
+
+
+
+2023-03-25 05:56:43.356 [info] Extension host agent started.
+2023-03-25 05:56:44.302 [info] [127.0.0.1][ee64696b][ManagementConnection] New connection established.
+2023-03-25 05:56:44.303 [info] [127.0.0.1][6c8ec3ba][ExtensionHostConnection] New connection established.
+2023-03-25 05:56:44.333 [info] [127.0.0.1][6c8ec3ba][ExtensionHostConnection] <97744> Launched Extension Host Process.
+2023-03-25 05:56:44.976 [info] Deleted from disk blackboxapp.blackbox /web/users/projects/202223/quicknotes/.vscode-server/extensions/blackboxapp.blackbox-0.10.45
+2023-03-25 05:56:54.321 [info] Getting Manifest... blackboxapp.blackbox
+2023-03-25 05:56:54.392 [info] Installing extension: blackboxapp.blackbox
+2023-03-25 05:56:58.927 [info] Extension signature verification: blackboxapp.blackbox. Verification status: Verified.
+2023-03-25 05:57:03.482 [info] Extracted extension to /web/users/projects/202223/quicknotes/.vscode-server/extensions/.bd42f0d6-3318-449d-ac9c-2c87b6b901b5: blackboxapp.blackbox
+2023-03-25 05:57:03.489 [info] Renamed to /web/users/projects/202223/quicknotes/.vscode-server/extensions/blackboxapp.blackbox-0.10.51
+2023-03-25 05:57:03.492 [info] Extracting extension completed. blackboxapp.blackbox
+2023-03-25 05:57:03.505 [info] Extension installed successfully: blackboxapp.blackbox
+2023-03-25 05:57:03.520 [info] Marked extension as uninstalled blackboxapp.blackbox-0.10.47
+2023-03-25 06:01:43.330 [info] New EH opened, aborting shutdown
+2023-03-25 06:04:03.149 [info] Getting Manifest... ms-vscode.live-server
+2023-03-25 06:04:03.191 [info] Installing extension: ms-vscode.live-server
+2023-03-25 06:04:04.720 [info] Extension signature verification: ms-vscode.live-server. Verification status: Verified.
+2023-03-25 06:04:05.058 [info] Extracted extension to /web/users/projects/202223/quicknotes/.vscode-server/extensions/.771914f2-1acb-4fad-ae4d-ce72d050ec6f: ms-vscode.live-server
+2023-03-25 06:04:05.066 [info] Renamed to /web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.5.2023032301
+2023-03-25 06:04:05.070 [info] Extracting extension completed. ms-vscode.live-server
+2023-03-25 06:04:05.075 [info] Extension installed successfully: ms-vscode.live-server
+2023-03-25 06:04:05.083 [info] Marked extension as uninstalled ms-vscode.live-server-0.4.7
+2023-03-25 06:04:10.165 [info] [127.0.0.1][ee64696b][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-25 06:04:10.226 [info] [127.0.0.1][6c8ec3ba][ExtensionHostConnection] <97744> Extension Host Process exited with code: 0, signal: null.
+2023-03-25 06:04:10.226 [info] Last EH closed, waiting before shutting down
+2023-03-25 06:04:26.875 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-25 06:04:26.875 [info] Cancelling previous shutdown timeout
+2023-03-25 06:04:27.370 [info] [127.0.0.1][e87acb3f][ManagementConnection] New connection established.
+2023-03-25 06:04:27.596 [info] [127.0.0.1][648d3bfd][ExtensionHostConnection] New connection established.
+2023-03-25 06:04:27.602 [info] [127.0.0.1][648d3bfd][ExtensionHostConnection] <99437> Launched Extension Host Process.
+2023-03-25 06:04:30.035 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateTitle (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:2630)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-25 06:04:36.625 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateTitle (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:2630)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-25 06:04:36.625 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateIcon (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:2680)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-25 06:09:26.876 [info] New EH opened, aborting shutdown
+2023-03-25 07:40:58.412 [info] [127.0.0.1][e87acb3f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-25 07:40:58.503 [info] [127.0.0.1][648d3bfd][ExtensionHostConnection] <99437> Extension Host Process exited with code: 0, signal: null.
+2023-03-25 07:40:58.504 [info] Last EH closed, waiting before shutting down
+2023-03-25 07:45:58.505 [info] Last EH closed, shutting down

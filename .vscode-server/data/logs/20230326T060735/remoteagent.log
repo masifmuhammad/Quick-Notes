@@ -1,0 +1,12 @@
+2023-03-26 06:07:35.640 [info] 
+
+
+
+
+2023-03-26 06:07:35.744 [info] Extension host agent started.
+2023-03-26 06:07:36.611 [info] [127.0.0.1][3ce57e9d][ManagementConnection] New connection established.
+2023-03-26 06:07:36.983 [info] [127.0.0.1][d58b1096][ExtensionHostConnection] New connection established.
+2023-03-26 06:07:37.029 [info] [127.0.0.1][d58b1096][ExtensionHostConnection] <129988> Launched Extension Host Process.
+2023-03-26 06:07:37.083 [info] Deleted from disk ms-vscode.live-server /web/users/projects/202223/quicknotes/.vscode-server/extensions/ms-vscode.live-server-0.4.7
+2023-03-26 06:07:37.089 [info] Deleted from disk blackboxapp.blackbox /web/users/projects/202223/quicknotes/.vscode-server/extensions/blackboxapp.blackbox-0.10.47
+2023-03-26 06:12:35.746 [info] New EH opened, aborting shutdown

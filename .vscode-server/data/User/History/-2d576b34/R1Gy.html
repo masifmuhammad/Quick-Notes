@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Forgot Password</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const error = urlParams.get('error');
+      if (error) {
+        alert(decodeURIComponent(error));
+      }
+    });
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js"></script>
+  <script type="module">
+    import { initializeApp } from "firebase/app";
+    import { signInWithPhoneNumber, RecaptchaVerifier } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js';
+
+    const firebaseConfig = {
+  apiKey: "AIzaSyCzFLZEFh0gQv8OAHgewx_QgmGNOZbKm4o",
+  authDomain: "quick-notes-69bbd.firebaseapp.com",
+  projectId: "quick-notes-69bbd",
+  storageBucket: "quick-notes-69bbd.appspot.com",
+  messagingSenderId: "263436417083",
+  appId: "1:263436417083:web:d6cc88aa0e21c26cf1441e",
+  measurementId: "G-Z5NSF85Q73"
+};
+    const app = initializeApp(firebaseConfig);
+    const auth = app.auth();
+
+    function sendVerificationCode() {
+      const phoneNumber = document.getElementById('phone-number').value;
+      const appVerifier = new RecaptchaVerifier('recaptcha-container');
+
+      signInWithPhoneNumber(auth, phoneNumber, appVerifier)
+        .then((confirmationResult) => {
+          // SMS sent. Prompt user to type the code from the message.
+          const code = prompt('Enter the verification code from the SMS');
+          return confirmationResult.confirm(code);
+        })
+        .then((result) => {
+          // Password reset successful
+          const newPassword = prompt('Enter a new password');
+          return result.user.updatePassword(newPassword);
+        })
+        .then(() => {
+          // Password update successful
+          alert('Password reset successful');
+        })
+        .catch((error) => {
+          // Handle errors here
+          console.error(error);
+        });
+    }
+  </script>
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h4 class="mb-4 pb-3">Forgot Password</h4>
+            <form onsubmit="sendVerificationCode(); return false;">
+              <div class="form-group">
+                <input type="tel" id="phone-number" class="form-style" placeholder="Phone Number" />
+                <i class="input-icon uil uil-phone"></i>
+              </div>
+              <div class="form-group mt-2">
+                <div id="recaptcha-container"></div>
+              </div>
+              <button type="submit" class="btn mt-4">Reset Password</button>
+            </form>
+          </div>
+        </div>
+      </div>

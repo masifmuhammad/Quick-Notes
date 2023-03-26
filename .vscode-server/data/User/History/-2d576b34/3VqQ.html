@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirebaseUI Web Example</title>
+    <!-- Import Firebase and FirebaseUI libraries -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+</head>
+<body>
+    <h1>Welcome to FirebaseUI Web Example</h1>
+    <div id="firebaseui-auth-container"></div>
+
+    <!-- Add your Firebase SDK configuration code here -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCzFLZEFh0gQv8OAHgewx_QgmGNOZbKm4o",
+          authDomain: "quick-notes-69bbd.firebaseapp.com",
+          projectId: "quick-notes-69bbd",
+          storageBucket: "quick-notes-69bbd.appspot.com",
+          messagingSenderId: "263436417083",
+          appId: "1:263436417083:web:d6cc88aa0e21c26cf1441e",
+          measurementId: "G-Z5NSF85Q73"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <!-- Initialize FirebaseUI and set up sign-in providers -->
+    <script>
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+        var uiConfig = {
+            callbacks: {
+                signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+                    return true;
+                },
+                uiShown: function() {
+                    document.getElementById('firebaseui-auth-container').style.display = 'none';
+                }
+            },
+            signInFlow: 'popup',
+            signInSuccessUrl: '<URL_TO_REDIRECT_ON_SUCCESS>',
+            signInOptions: [
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+                firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID
+            ],
+            tosUrl: '<YOUR_TERMS_OF_SERVICE_URL>',
+            privacyPolicyUrl: '<YOUR_PRIVACY_POLICY_URL>'
+        };
+
+        ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+</body>
+</html>

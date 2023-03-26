@@ -1,0 +1,31 @@
+2023-03-24 14:47:29.213 [info] 
+
+
+
+
+2023-03-24 14:47:29.319 [info] Extension host agent started.
+2023-03-24 14:47:29.578 [info] [127.0.0.1][50a3185a][ExtensionHostConnection] New connection established.
+2023-03-24 14:47:29.579 [info] [127.0.0.1][e94e2206][ManagementConnection] New connection established.
+2023-03-24 14:47:29.582 [info] [127.0.0.1][50a3185a][ExtensionHostConnection] <76094> Launched Extension Host Process.
+2023-03-24 14:47:34.567 [info] Getting Manifest... blackboxapp.blackbox
+2023-03-24 14:47:34.645 [info] Installing extension: blackboxapp.blackbox
+2023-03-24 14:47:36.332 [info] Extension signature verification: blackboxapp.blackbox. Verification status: Verified.
+2023-03-24 14:47:36.566 [info] [127.0.0.1][e94e2206][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-24 14:47:36.594 [info] [127.0.0.1][50a3185a][ExtensionHostConnection] <76094> Extension Host Process exited with code: 0, signal: null.
+2023-03-24 14:47:36.594 [info] Cancelling previous shutdown timeout
+2023-03-24 14:47:36.594 [info] Last EH closed, waiting before shutting down
+2023-03-24 14:47:40.264 [info] Extracted extension to /web/users/projects/202223/quicknotes/.vscode-server/extensions/.a58b05ef-d7ce-480f-8546-66ddea4552a8: blackboxapp.blackbox
+2023-03-24 14:47:40.267 [info] Renamed to /web/users/projects/202223/quicknotes/.vscode-server/extensions/blackboxapp.blackbox-0.10.47
+2023-03-24 14:47:40.269 [info] Extracting extension completed. blackboxapp.blackbox
+2023-03-24 14:47:40.283 [info] Extension installed successfully: blackboxapp.blackbox
+2023-03-24 14:47:40.286 [info] Marked extension as uninstalled blackboxapp.blackbox-0.10.45
+2023-03-24 14:47:54.602 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-24 14:47:54.602 [info] Cancelling previous shutdown timeout
+2023-03-24 14:47:54.897 [info] [127.0.0.1][7c708f33][ManagementConnection] New connection established.
+2023-03-24 14:47:54.920 [info] [127.0.0.1][9a47218d][ExtensionHostConnection] New connection established.
+2023-03-24 14:47:54.934 [info] [127.0.0.1][9a47218d][ExtensionHostConnection] <76292> Launched Extension Host Process.
+2023-03-24 14:52:54.604 [info] New EH opened, aborting shutdown
+2023-03-24 16:28:16.872 [info] [127.0.0.1][7c708f33][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-24 16:28:16.961 [info] [127.0.0.1][9a47218d][ExtensionHostConnection] <76292> Extension Host Process exited with code: 0, signal: null.
+2023-03-24 16:28:16.961 [info] Last EH closed, waiting before shutting down
+2023-03-24 16:33:16.963 [info] Last EH closed, shutting down

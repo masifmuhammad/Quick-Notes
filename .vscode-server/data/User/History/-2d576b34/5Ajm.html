@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.css" />
+
+  <title>Forgot Password</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+    import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCzFLZEFh0gQv8OAHgewx_QgmGNOZbKm4o",
+      authDomain: "quick-notes-69bbd.firebaseapp.com",
+      projectId: "quick-notes-69bbd",
+      storageBucket: "quick-notes-69bbd.appspot.com",
+      messagingSenderId: "263436417083",
+      appId: "1:263436417083:web:d6cc88aa0e21c26cf1441e",
+      measurementId: "G-Z5NSF85Q73"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+  </script>
+</head>
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h4 class="mb-4 pb-3">Forgot Password</h4>
+
+            <!-- FirebaseUI container -->
+            <div id="firebaseui-auth-container"></div>
+
+            <script>
+              // FirebaseUI config.
+              var uiConfig = {
+                signInSuccessUrl: '<url-to-redirect-to-on-success>',
+                signInOptions: [
+                  // Leave the lines as is for the providers you want to offer your users.
+                  firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                  firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+                  firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+                  firebase.auth.GithubAuthProvider.PROVIDER_ID,
+                  firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                  firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+                  firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+                ],
+             
+                // tosUrl and privacyPolicyUrl accept either a URL string or a callback function.
+                // Terms of service url/callback.
+                tosUrl: '<your-tos-url>',
+                // Privacy policy url/callback.
+                privacyPolicyUrl: function() {
+                  window.location.assign('<your-privacy-policy-url>');
+                }
+              };
+
+              // Initialize the FirebaseUI Widget using Firebase.
+              var ui = new firebaseui.auth.AuthUI(firebase.auth());
+              // The start method will wait until the DOM is loaded.
+              ui.start('#firebaseui-auth-container', uiConfig);
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

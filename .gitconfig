@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Team.Quick.Notes
+#	email = quicknotes@selene.hud.ac.uk
+[init]
+	defaultBranch = main

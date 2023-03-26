@@ -1,0 +1,14 @@
+2023-03-22 10:23:35.159 [info] 
+
+
+
+
+2023-03-22 10:23:35.244 [info] Extension host agent started.
+2023-03-22 10:23:35.514 [info] [127.0.0.1][61c210be][ManagementConnection] New connection established.
+2023-03-22 10:23:35.532 [info] [127.0.0.1][afe97562][ExtensionHostConnection] New connection established.
+2023-03-22 10:23:35.536 [info] [127.0.0.1][afe97562][ExtensionHostConnection] <13666> Launched Extension Host Process.
+2023-03-22 10:23:36.979 [info] Deleted from disk blackboxapp.blackbox /web/users/projects/202223/quicknotes/.vscode-server/extensions/blackboxapp.blackbox-0.10.44
+2023-03-22 10:28:35.246 [info] New EH opened, aborting shutdown
+2023-03-22 15:32:58.558 [info] [127.0.0.1][afe97562][ExtensionHostConnection] <13666> Extension Host Process exited with code: 0, signal: null.
+2023-03-22 15:32:58.559 [info] Last EH closed, waiting before shutting down
+2023-03-22 15:37:58.561 [info] Last EH closed, shutting down

@@ -1,0 +1,60 @@
+2023-03-21 16:07:05.345 [info] 
+
+
+
+
+2023-03-21 16:07:05.369 [info] Extension host agent started.
+2023-03-21 16:07:06.121 [info] [127.0.0.1][d2e58b72][ManagementConnection] New connection established.
+2023-03-21 16:07:06.134 [info] [127.0.0.1][ced36d6b][ExtensionHostConnection] New connection established.
+2023-03-21 16:07:06.142 [info] [127.0.0.1][ced36d6b][ExtensionHostConnection] <46209> Launched Extension Host Process.
+2023-03-21 16:07:16.717 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateTitle (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:2630)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-21 16:07:16.723 [error] CodeExpectedError: Could not find pty on pty host
+    at S.L (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:6849)
+    at S.updateIcon (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:27:2680)
+    at Object.call (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:17:5043)
+    at l.s (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:5412)
+    at l.q (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4915)
+    at /web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:15:4326
+    at n.invoke (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at E.deliver (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:2070)
+    at c.fire (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:11:1708)
+    at process.T (/web/users/projects/202223/quicknotes/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/out/vs/platform/terminal/node/ptyHostMain.js:9:20949)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-03-21 16:12:05.370 [info] New EH opened, aborting shutdown
+2023-03-21 16:35:24.701 [info] [127.0.0.1][d2e58b72][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-21 16:35:24.746 [info] [127.0.0.1][ced36d6b][ExtensionHostConnection] <46209> Extension Host Process exited with code: 0, signal: null.
+2023-03-21 16:35:24.746 [info] Last EH closed, waiting before shutting down
+2023-03-21 16:36:52.742 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-21 16:36:52.743 [info] Cancelling previous shutdown timeout
+2023-03-21 16:36:52.876 [info] [127.0.0.1][6e115df6][ManagementConnection] New connection established.
+2023-03-21 16:36:52.883 [info] [127.0.0.1][e206eddc][ExtensionHostConnection] New connection established.
+2023-03-21 16:36:52.894 [info] [127.0.0.1][e206eddc][ExtensionHostConnection] <48907> Launched Extension Host Process.
+2023-03-21 16:37:03.793 [info] [127.0.0.1][6e115df6][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-03-21 16:37:03.817 [info] [127.0.0.1][e206eddc][ExtensionHostConnection] <48907> Extension Host Process exited with code: 0, signal: null.
+2023-03-21 16:37:03.817 [info] Cancelling previous shutdown timeout
+2023-03-21 16:37:03.817 [info] Last EH closed, waiting before shutting down
+2023-03-21 16:37:14.244 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-03-21 16:37:14.244 [info] Cancelling previous shutdown timeout
+2023-03-21 16:37:14.400 [info] [127.0.0.1][c57549ef][ManagementConnection] New connection established.
+2023-03-21 16:37:14.402 [info] [127.0.0.1][7b6f6ebb][ExtensionHostConnection] New connection established.
+2023-03-21 16:37:14.436 [info] [127.0.0.1][7b6f6ebb][ExtensionHostConnection] <49110> Launched Extension Host Process.
+2023-03-21 16:42:14.245 [info] New EH opened, aborting shutdown
+2023-03-21 17:57:58.796 [info] [127.0.0.1][7b6f6ebb][ExtensionHostConnection] The client has reconnected.
+2023-03-21 20:58:11.627 [info] [127.0.0.1][7b6f6ebb][ExtensionHostConnection] <49110> Extension Host Process exited with code: 0, signal: null.
+2023-03-21 20:58:11.627 [info] Last EH closed, waiting before shutting down
+2023-03-21 21:03:11.627 [info] Last EH closed, shutting down

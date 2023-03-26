@@ -1,0 +1,48 @@
+<?php
+session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Start the session
+
+
+include ("connection.php");
+
+// Check if the form was submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  // Get the values from the form
+  $UserName = $_POST['UserName'];
+  $password = $_POST['password'];
+
+  // Search the database for the entered username
+  $sql = "SELECT * FROM user_accounts WHERE UserName='$UserName'";
+  $result = $conn->query($sql);
+
+  if ($result->num_rows > 0) {
+    // Get the hashed password from the database
+    $row = $result->fetch_assoc();
+    $hashed_password = $row['password'];
+
+    // Check if the entered password matches the hashed password
+    if (password_verify($password, $hashed_password)) {
+      // Assuming $user_id is the ID of the logged-in user
+      $_SESSION['user_id'] = $user_id;
+      header('Location: main.php');
+      exit;
+  } else {
+      // Incorrect password, set error message
+      $error = "Incorrect password";
+      header("Location: index.html?error=" . urlencode($error));
+      exit();
+    }
+  } else {
+    // Username not found, set error message
+    $error = "Username not found";
+    header("Location: index.html?error=" . urlencode($error));
+    exit();
+  }
+
+  // Close the connection
+  $conn->close();
+}

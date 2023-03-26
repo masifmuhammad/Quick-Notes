@@ -66,3 +66,10 @@ git config --global --edit
 git push
 git status
 $ bower install firebaseui --save
+git pull
+git commint -m "Fixed some issues made it more convi. for mobile users"
+git --help
+git commit -am "your commit message"
+git commit -am "made the overall look more flexible for mobile users"
+git push
+git status
