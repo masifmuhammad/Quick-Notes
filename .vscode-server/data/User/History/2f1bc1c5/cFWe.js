@@ -22,15 +22,8 @@ document.querySelectorAll('.edit-btn').forEach(button => {
         // Edit the note with the given noteId
     });
 });
-// Get the edit buttons
 document.querySelectorAll('.edit-btn').forEach(button => {
     button.addEventListener('click', (e) => {
-        // Close previous modal or form if it exists
-        const existingForm = document.querySelector('.edit-note-form');
-        if (existingForm) {
-            existingForm.remove();
-        }
-        // Create new form
         const noteId = e.target.dataset.id;
         fetch(`get_note.php?note_id=${noteId}`)
             .then((response) => {
@@ -41,17 +34,15 @@ document.querySelectorAll('.edit-btn').forEach(button => {
             })
             .then((noteContent) => {
                 const editNoteForm = document.createElement('form');
-                editNoteForm.classList.add('edit-note-form');
                 editNoteForm.innerHTML = `
                     <input type="hidden" name="note_id" value="${noteId}">
                     <label for="title">Title:</label>
                     <input type="text" id="title" name="title" value="${e.target.parentElement.querySelector('h4').innerText}">
                     <label for="note">Note:</label>
-                    <textarea id="note" name="note">${e.target.parentElement.querySelector('p').innerHTML}</textarea>
-
+                    <textarea id="note" name="note">${noteContent}</textarea>
                     <input type="submit" value="Update Note" name="submit">
                 `;
-                e.target.parentElement.appendChild(editNoteForm);
+                e.target.parentElement.replaceWith(editNoteForm);
                 editNoteForm.addEventListener('submit', (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
@@ -82,8 +73,7 @@ document.querySelectorAll('.edit-btn').forEach(button => {
                 alert('Error fetching note content:', error);
             });
     });
-
-        
+});
 
 document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', (e) => {
@@ -123,9 +113,8 @@ document.querySelectorAll('.delete-btn').forEach(button => {
             alert('Error deleting the note:', error);
         });
     });
+});
 
-});
-});
 
 
 

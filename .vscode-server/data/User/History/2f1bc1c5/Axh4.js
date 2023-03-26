@@ -25,12 +25,6 @@ document.querySelectorAll('.edit-btn').forEach(button => {
 // Get the edit buttons
 document.querySelectorAll('.edit-btn').forEach(button => {
     button.addEventListener('click', (e) => {
-        // Close previous modal or form if it exists
-        const existingForm = document.querySelector('.edit-note-form');
-        if (existingForm) {
-            existingForm.remove();
-        }
-        // Create new form
         const noteId = e.target.dataset.id;
         fetch(`get_note.php?note_id=${noteId}`)
             .then((response) => {
@@ -40,8 +34,26 @@ document.querySelectorAll('.edit-btn').forEach(button => {
                 return response.text();
             })
             .then((noteContent) => {
+                // Create the modal background
+                const modalBg = document.createElement('div');
+                modalBg.classList.add('modal-bg');
+
+                // Create the modal content
+                const modalContent = document.createElement('div');
+                modalContent.classList.add('modal-content');
+
+                // Create the close button
+                const closeBtn = document.createElement('span');
+                closeBtn.classList.add('close-btn');
+                closeBtn.innerHTML = '&times;';
+                closeBtn.addEventListener('click', () => {
+                    // Remove the modal and background when the close button is clicked
+                    modalBg.remove();
+                    modalContent.remove();
+                });
+
+                // Create the form
                 const editNoteForm = document.createElement('form');
-                editNoteForm.classList.add('edit-note-form');
                 editNoteForm.innerHTML = `
                     <input type="hidden" name="note_id" value="${noteId}">
                     <label for="title">Title:</label>
@@ -49,9 +61,23 @@ document.querySelectorAll('.edit-btn').forEach(button => {
                     <label for="note">Note:</label>
                     <textarea id="note" name="note">${e.target.parentElement.querySelector('p').innerHTML}</textarea>
 
+
                     <input type="submit" value="Update Note" name="submit">
                 `;
-                e.target.parentElement.appendChild(editNoteForm);
+
+                // Append the form and close button to the modal content
+                modalContent.appendChild(editNoteForm);
+                modalContent.appendChild(closeBtn);
+
+                // Append the modal content and background to the body
+                document.body.appendChild(modalBg);
+                document.body.appendChild(modalContent);
+
+                // Show the modal and background
+                modalBg.style.display = 'block';
+                modalContent.style.display = 'block';
+
+                // Handle form submission
                 editNoteForm.addEventListener('submit', (e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);
@@ -76,13 +102,12 @@ document.querySelectorAll('.edit-btn').forEach(button => {
                             alert('Error updating note:', error);
                         });
                 });
-            })
-            .catch((error) => {
-                console.error('Error fetching note content:', error);
-                alert('Error fetching note content:', error);
+                editModal.appendChild(form);
+                document.body.appendChild(editModal);
+                // Open the modal
+                editModal.style.display = 'block';
             });
-    });
-
+        });
         
 
 document.querySelectorAll('.delete-btn').forEach(button => {

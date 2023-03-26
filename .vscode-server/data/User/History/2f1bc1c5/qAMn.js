@@ -47,8 +47,7 @@ document.querySelectorAll('.edit-btn').forEach(button => {
                     <label for="title">Title:</label>
                     <input type="text" id="title" name="title" value="${e.target.parentElement.querySelector('h4').innerText}">
                     <label for="note">Note:</label>
-                    <textarea id="note" name="note">${e.target.parentElement.querySelector('p').innerHTML}</textarea>
-
+                    <textarea id="note" name="note">${noteContent}</textarea>
                     <input type="submit" value="Update Note" name="submit">
                 `;
                 e.target.parentElement.appendChild(editNoteForm);
