@@ -58,7 +58,9 @@ session_start();
             <li>
                 <h4><?= htmlspecialchars($note['title']); ?></h4>
                 <?php
-                    $note_text = $note['note'];
+                   $note_text = strip_tags($note['note']);
+                   $note_text = nl2br(htmlspecialchars($note_text));
+                    $note_text = str_replace('&nbsp;', ' ', $note_text);
                 ?>
                 <p><?= $note_text; ?></p>
             </li>
